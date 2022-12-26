@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/category_image_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/world_map_png_background_image_2__1_"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:focusable="false"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <!--        <Button-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Visa Free"-->
+        <!--            android:textSize="28sp"-->
+        <!--            android:layout_margin="40sp"-->
+        <!--            android:padding="20sp"-->
+        <!--            />-->
+        <!--        <Button-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Visa on arrival"-->
+        <!--            android:textSize="28sp"-->
+        <!--            android:layout_margin="40sp"-->
+        <!--            android:padding="20sp"-->
+        <!--            android:background="@drawable/btn_rounded_primary_select"-->
+        <!--            android:backgroundTintMode="multiply"-->
+        <!--            android:backgroundTint="@android:color/white"-->
+
+        <!--            />-->
+        <!--        <Button-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Visa required"-->
+        <!--        android:textSize="28sp"-->
+        <!--        android:layout_margin="40sp"-->
+        <!--        android:padding="20sp"-->
+        <!--        android:background="@drawable/btn_rounded_primary"-->
+        <!--        />-->
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_margin="40sp"
+            android:padding="30sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Visa Free"
+            android:textColor="#F8095F"
+            android:textStyle="bold"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            app:strokeColor="@color/blue"
+            android:backgroundTint="@color/white"
+            android:elevation="10sp"
+            app:strokeWidth="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_margin="40sp"
+            android:padding="30sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Visa on Arrival"
+            android:textColor="#F8095F"
+            android:textStyle="bold"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            app:strokeColor="@color/blue"
+            android:backgroundTint="@color/white"
+            android:elevation="10sp"
+            app:strokeWidth="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_margin="40sp"
+            android:padding="30sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Visa Required"
+            android:textColor="#F8095F"
+            android:textStyle="bold"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            app:strokeColor="@color/blue"
+            android:backgroundTint="@color/white"
+            android:elevation="10sp"
+            app:strokeWidth="2dp"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
