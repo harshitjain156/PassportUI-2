@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_margin="30sp"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardElevation="10sp"
+        android:layout_marginVertical="20sp"
+        app:cardCornerRadius="30sp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Enter country name "
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_baseline_search_24">
+
+                <requestFocus />
+
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/bt_mic"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_baseline_mic_24"
+                app:tint="@color/blue" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10sp">
+
+
+            <include layout="@layout/card_layout"/>
+            <include layout="@layout/card_layout"/>
+            <include layout="@layout/card_layout"/>
+            <include layout="@layout/card_layout"/>
+            <include layout="@layout/card_layout"/>
+            <include layout="@layout/card_layout"/>
+            <include layout="@layout/card_layout"/>
+            <include layout="@layout/card_layout"/>
+            <include layout="@layout/card_layout"/>
+            <include layout="@layout/card_layout"/>
+            <include layout="@layout/card_layout"/>
+            <include layout="@layout/card_layout"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
